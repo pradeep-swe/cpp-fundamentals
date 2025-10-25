@@ -1,5 +1,5 @@
-# <strong>Title</strong>: Fundamentals of Programming in C++
+# Title: Fundamentals of Programming in C++
 
-# <strong>Description</strong>: Clear understanding of C++ programming fundamentals for beginners
+# Description: Clear understanding of C++ programming fundamentals for beginners
 
-# <strong>Author</strong>: Pradeep Pandey
+# Author: Pradeep Pandey
