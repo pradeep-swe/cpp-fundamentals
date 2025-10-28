@@ -25,8 +25,8 @@ void displayDistance(double towerHeight, double time) {
 
 void calculateDistance(double towerHeight, double initialVelocity, double gravity) {
     /*
-        Calculate the distance the ball travelled when given Tower Height, acceleration
-        due to gravity, initial velocity and time.
+    Calculate the distance the ball travelled when given Tower Height, acceleration
+    due to gravity, initial velocity and time.
     */
     double totalTime{5.0};
 
