@@ -4,8 +4,7 @@
 #include <iostream>
 
 // Get the Tower height form the user.
-double getHeight()
-{
+double getHeight() {
     std::cout << "Enter the towerHeight of the tower in meters: ";
     double towerHeight{};
     std::cin >> towerHeight;
@@ -14,13 +13,11 @@ double getHeight()
 }
 
 // Display the distance the ball travelled over the time.
-void displayDistance(double towerHeight, double time)
-{
+void displayDistance(double towerHeight, double time) {
     std::cout << "The towerHeight of the tower at " << time << "sec is: " << towerHeight << " meters." << std::endl;
 }
 
-void calculateDistance(double towerHeight, double initialVelocity, double gravity)
-{
+void calculateDistance(double towerHeight, double initialVelocity, double gravity) {
     /*
         Calculate the distance the ball travelled when given Tower Height, acceleration
         due to gravity, initial velocity and time.
@@ -40,8 +37,7 @@ void calculateDistance(double towerHeight, double initialVelocity, double gravit
     }
 }
 
-int main()
-{
+int main() {
     double gravity{9.8};
     double initialVelocity{0.0};
     double towerHeight{getHeight()};
