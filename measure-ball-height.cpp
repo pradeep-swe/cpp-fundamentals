@@ -16,12 +16,10 @@ double getHeight() {
     return towerHeight;
 }
 
-
 // Display the distance the ball travelled over the time.
 void displayDistance(double towerHeight, double time) {
     std::cout << "The towerHeight of the tower at " << time << "sec is: " << towerHeight << " meters." << std::endl;
 }
-
 
 void calculateDistance(double towerHeight, double initialVelocity, double gravity) {
     /*
@@ -42,7 +40,6 @@ void calculateDistance(double towerHeight, double initialVelocity, double gravit
             return;
     }
 }
-
 
 int main() {
     double gravity{9.8};
