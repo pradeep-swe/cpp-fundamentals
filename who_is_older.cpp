@@ -56,7 +56,7 @@ int main()
 /*
 =================================FURTHER OPTIMIZTION===================================
 NOTE:
-    Since the age wont be possibly more 255, you can modify the program to make
+    Since the age wont be possibly more than 255, you can modify the program to make
     use of uint8_t (unsigned int of 8 byte).
 
 CAUTION:
