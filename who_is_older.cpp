@@ -15,8 +15,7 @@ OUTPUT:
 #include <string>
 
 // Retrive the name of a person
-std::string getName()
-{
+std::string getName() {
     std::cout << "Enter your name: "; // Ask for user name
     std::string name{};
     std::cin >> name;
@@ -25,8 +24,7 @@ std::string getName()
 }
 
 // Retrive the age of the person
-int getAge()
-{
+int getAge() {
     std::cout << "Enter your age: "; // Ask for user age
     int age{};
     std::cin >> age;
@@ -35,14 +33,13 @@ int getAge()
 }
 
 // Print the older among two people based on their ages.
-void displayOlder(std::string_view name1, int age1, std::string_view name2, int age2)
-{
+void displayOlder(std::string_view name1, int age1, std::string_view name2, int age2) {
+    // Utilization of ternary operator for lesser lines of code
     std::cout << ((age1 > age2) ? name1 : name2) << " is older." << std::endl;
 }
 
 // Entry Funciton
-int main()
-{
+int main() {
 
     std::string_view name1{getName()}; // Get the name of first person
     int age1{getAge()};                // Get the age of first person
