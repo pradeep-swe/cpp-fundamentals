@@ -3,9 +3,9 @@ Write a program that asks for the name and age of two people, then prints which 
 
 Here is the sample output from one run of the program:
 OUTPUT:
-    Enter the name of person #1: John Bacon
+    Enter the name of person #1: Pradeep 
     Enter the age of John Bacon: 37
-    Enter the name of person #2: David Jenkins
+    Enter the name of person #2: Santosh
     Enter the age of David Jenkins: 44
     David Jenkins (age 44) is older than John Bacon (age 37).
 */
@@ -56,9 +56,12 @@ int main()
 /*
 =================================FURTHER OPTIMIZTION===================================
 NOTE:
-    Since the age wont be possibly more than 255, you can modify the program to make
-    use of uint8_t (unsigned int of 8 byte).
-
+    1.  Since the age wont be possibly more than 255, you can modify the program to make
+        use of uint8_t (unsigned int of 8 byte).
+    2.  Use getline() function to retrive the full name cause std::cin breaks when it 
+        finds sapces and new line character and dont forget to flush the input buffer
+        if you were to ask for the age first since the new line char '\n' is strore in
+        the buffer when the user hits "ENTER". 
 CAUTION:
     Using uint8_t without castng will make the age use char tye instead of integer one
     which can cause the program to show undefined behavior.
