@@ -10,7 +10,6 @@ negative numbers.
 
 // Ask user for a number
 int getNum() {
-
     std::cout << "Enter a number: ";
     int num{};
     std::cin >> num;
@@ -20,27 +19,28 @@ int getNum() {
 
 // Compile time function to calculate evenness of a number
 constexpr bool isEven(int num) {
-
-    return (num % 2 == 0) ? true : false; // Returns "true" if even and "false" if odd
+        return (num % 2 == 0) ? true : false; // Returns "true" if even and "false" if odd
 }
 
 // Display whether the user given number is Odd or Even
-void diplayEvenness(int num) {
+void displayEvenness(int num) {
     bool flag {isEven(num)}; // if even '1', if odd '0'
     if (flag)
         std::cout << num << " is Even" << std::endl;
     else 
         std::cout << num << " is Odd" << std::endl;
-
-    return 0;
 }
 
 int main() {    
     // funcCall to get number from the user
     int userNum(getNum());
 
-    // funcCall to display Evennes of the user entered number
-    displayEvenness(userNum);
+    if (userNum >= 0) 
+        // funcCall to display Evennes of the user entered number
+        displayEvenness(userNum);
+    else 
+        std::cout << "Invalid Number." << std::endl;
+
 
     return 0;
 }
